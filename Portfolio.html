@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Clarenz's Portfolio</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+<style>
+   :root {
+     --primary-color: #4d1616;
+     --background-color: #eceac9;
+     --text-color: #ffffff;
+   }
+   body {
+     margin: 0;
+     padding: 0;
+     background-color: var(--background-color);
+     color: var(--primary-color);
+     font-family: Arial, sans-serif;
+   }
+   header {
+     text-align: center;
+     padding: 8rem 1rem 5rem;
+   }
+   header h1 {
+     font-size: 2rem;
+     color: var(--primary-color);
+     font-weight: 500;
+     margin-bottom: 3rem;
+   }
+   header img {
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+     object-fit: cover;
+     border: 4px solid var(--primary-color);
+     margin-top: 1rem;
+   }
+
+   .navbar {
+     background-color: var(--background-color);
+     border-bottom: 3px solid var(--primary-color);
+   }
+   .nav-link {
+     color: var(--primary-color) !important;
+     margin-right: 1rem;
+   }
+   .navbar-toggler-icon {
+     background-color: var(--primary-color);
+   }
+   .section {
+     padding: 2rem 1rem;
+     border-bottom: 1px solid var(--primary-color);
+     transition: transform 0.3s ease-in-out;
+   }
+   .section h2 {
+     margin-bottom: 1rem;
+     font-size: 2rem;
+     font-weight: 600;
+   }
+   .card {
+     background-color: var(--primary-color);
+     border: none;
+     border-radius: 6px;
+     padding: 1rem;
+     margin-bottom: 1rem;
+     color: var(--text-color);
+   }
+   .card:hover {
+     transform: translateY(-5px);
+   }
+   .btn-custom, .btn-outline-light {
+     padding: 0.5rem 1.2rem;
+     border-radius: 4px;
+     font-weight: bold;
+     margin-right: 0.5rem;
+     text-decoration: none;
+     transition: background-color 0.3s ease, color 0.3s ease;
+   }
+   .btn-custom {
+     background-color: var(--primary-color);
+     color: var(--background-color);
+   }
+   .btn-outline-light {
+     border: 1px solid var(--primary-color);
+     color: var(--primary-color);
+   }
+   .btn-outline-light:hover {
+     background-color: var(--primary-color);
+     color: var(--text-color);
+   }
+   footer {
+     text-align: center;
+     padding: 1rem;
+     font-size: 0.9rem;
+     color: var(--primary-color);
+     border-top: 1px solid var(--primary-color);
+     margin-top: 2rem;
+   }
+   .aos-fade-up {
+     opacity: 0;
+     transition: opacity 0.5s ease-in-out;
+   }
+   .aos-fade-up.aos-animate {
+     opacity: 1;
+   }
+   .container {
+     max-width: 900px;
+     margin: auto;
+   }
+   @media (min-width: 768px) {
+     .container {
+       max-width: 720px;
+       margin: auto;
+     }
+   }
+</style>
+</head>
+<header>
+<h1>Hello, I'm Clarenz</h1>
+<img src="Image.jpg" alt=>
+</header>
+<div class="container">
+<section id="about" class="section" data-aos="fade-up">
+<h2>About Me</h2>
+<p>I enjoy crafting the perfect cup of coffee and capturing everyday beauty with my camera. Whether it's a pour-over or a photo composition, I focus on balance, timing, and detail.</p>
+</section>
+ 
+<section id="projects" class="section" data-aos="fade-up">
+<h2>Projects</h2>
+<div class="card" data-aos="fade-up">
+<strong>Photography Portfolio</strong>
+<p>A visual journey of everyday life, landscapes, and light—framed through my perspective.</p>
+</div>
+<div class="card" data-aos="fade-up">
+<strong>Coffee Brewing Lessons</strong>
+<p>A personal dive into brew methods, flavor notes, and barista techniques I've explored and refined.</p>
+</div>
+</section>
+ 
+<section id="skills" class="section" data-aos="fade-up">
+<h2>Skills</h2>
+<ul>
+<li>Photography (Portraits, Landscape)</li>
+<li>Coffee Brewing (Pour-over, Espresso, Latte Art)</li>
+<li>Web Development (HTML, CSS, JavaScript)</li>
+</ul>
+</section>
+ 
+<section id="contact" class="section" data-aos="fade-up">
+<h2>Contact</h2>
+<p>Let’s collaborate, shoot together, or talk coffee. Always happy to connect!</p>
+<a href="mailto:clarenz@example.com" class="btn btn-custom">Email Me</a>
+<a href="https://github.com/clrnz0030" target="_blank" class="btn btn-outline-light">GitHub</a>
+</section>
+</div>
+<footer>
+&copy; 2025 Clarenz Dimazana. Crafted with creativity and caffeine.
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script>
+   AOS.init({
+     duration: 1000,
+     easing: 'ease-in-out',
+     once: true
+   });
+</script>
+</body>
+</html>
